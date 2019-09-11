@@ -1,1 +1,45 @@
+<DOCTYPE html!>
+    <head>
+        <title>Remind Me - SaveYourSchedule</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "Stylesheet" href = "css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Chilanka" rel="stylesheet">
+     </head>
 
+    <body>
+        <div id = "reminder">
+            <h1> MY REMINDERS <i id="pencil" class="fas fa-pencil-alt"></i> </h1>
+
+            <form id="add-reminder">
+                    <input type="text" name="reminder-title" id="reminder-title" placeholder="add reminder">
+<label for="startTime">select date: </label>
+                    <input type="date" name="reminder-date" id="reminder-date">
+                    <label for="startTime">Select time: </label>
+  <input type="time" id="startTime">
+
+                    <button type="submit">Add to Reminders</button>
+            </form>
+            <ul id="remind" class="reminders">
+
+            </ul>
+            <div id= "buttons">
+                <button class="save">Save</button>
+                <button class="clear">Clear</button>
+                <button class="tipBtn">Tips</button>
+            </div>
+        </div>
+
+        <div id = "overlay">
+           <a href="javascript:void(0)" class="closebtn">&times;</a>
+           <ul class="tips">
+               <li>Click on the pencil to hide or show input area</li>
+               <li>Type text into input area and press enter to add reminder to list</li>
+               <li>Hover over the reminder and click the on trash can to delete</li>
+               <li>Click the clear button to clear all reminders from list</li>
+               <li>Click the Save button to save your reminders to access them later even if you exit the browser </li>
+            </ul>
+
+        </div>
+        <script src="js/script.js"></script>
+    </body>
